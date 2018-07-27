@@ -4,6 +4,13 @@ import matplotlib.pyplot as plt
 import matplotlib.tri as mtri
 import numpy as np
 
+#原始数据集
+class STATION_BASE(): 
+    def __init__(self, lon, lat, var):
+        self.lat = lat
+        self.lon = lon
+        self.var = var
+        
 #加入待插入点
 class Addpoints(object):
     def __init__(self, stn):
@@ -22,13 +29,6 @@ class Addpoints(object):
         interp = mtri.LinearTriInterpolator(tri, stb.var)
         z = interp(self.lon, self.lat)
         return z
-
-#原始数据集
-class STATION_BASE(): 
-    def __init__(self, lon, lat, var):
-        self.lat = lat
-        self.lon = lon
-        self.var = var
 
 #随机测试
 
