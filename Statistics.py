@@ -116,7 +116,7 @@ for time in times:
   print "NME in",time,"hours:", BJN.NME,"\n"  #NME越接近0越好，为正值，50%以下可以满意
 
   print "corr in",time,"hours:", BJN.corr,"\n" #corr越接近1越好
-  print "RMSE in", time, "hours:", BJN.RMSE, "\n\n"  # corr越接近1越好
+  print "RMSE in", time, "hours:", BJN.RMSE, "\n\n"  # RSME越小越好，看作标准差
 
 
 
